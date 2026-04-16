@@ -3,3 +3,4 @@ res://scenes/main.tscn
 res://block/block_old.gd
 res://player/player.gd
 res://scenes/label.gd
+res://spawner.gd
