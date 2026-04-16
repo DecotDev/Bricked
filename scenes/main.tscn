@@ -12,7 +12,7 @@ size = Vector2(1920, 16)
 [node name="Main" type="Node2D" unique_id=798972932]
 
 [node name="Player" parent="." unique_id=1224542518 instance=ExtResource("1_o5qli")]
-position = Vector2(1310, 940)
+position = Vector2(1110, 940)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1118314012]
 
@@ -26,52 +26,46 @@ texture = SubResource("PlaceholderTexture2D_o5qli")
 centered = false
 
 [node name="BlockOld3" parent="." unique_id=1975302761 instance=ExtResource("2_0wfyh")]
-position = Vector2(370, 610)
+position = Vector2(590, 560)
 
 [node name="BlockOld4" parent="." unique_id=1937988635 instance=ExtResource("2_0wfyh")]
-position = Vector2(610, 610)
+position = Vector2(830, 560)
 
 [node name="BlockOld9" parent="." unique_id=199132236 instance=ExtResource("2_0wfyh")]
-position = Vector2(430, 790)
+position = Vector2(650, 740)
 
 [node name="BlockOld12" parent="." unique_id=8395427 instance=ExtResource("2_0wfyh")]
-position = Vector2(370, 730)
+position = Vector2(590, 680)
 
 [node name="BlockOld13" parent="." unique_id=615448359 instance=ExtResource("2_0wfyh")]
-position = Vector2(370, 310)
+position = Vector2(590, 260)
 
 [node name="BlockOld14" parent="." unique_id=1849046028 instance=ExtResource("2_0wfyh")]
-position = Vector2(610, 310)
+position = Vector2(830, 260)
 
 [node name="BlockOld16" parent="." unique_id=1024025611 instance=ExtResource("2_0wfyh")]
-position = Vector2(1180, 850)
-
-[node name="BlockOld24" parent="." unique_id=155608778 instance=ExtResource("2_0wfyh")]
-position = Vector2(1190, 730)
-
-[node name="BlockOld25" parent="." unique_id=1173466386 instance=ExtResource("2_0wfyh")]
-position = Vector2(1200, 610)
+position = Vector2(1310, 800)
 
 [node name="BlockOld15" parent="." unique_id=180969698 instance=ExtResource("2_0wfyh")]
-position = Vector2(550, 670)
+position = Vector2(770, 620)
 
 [node name="BlockOld17" parent="." unique_id=2129540456 instance=ExtResource("2_0wfyh")]
-position = Vector2(670, 610)
+position = Vector2(890, 560)
 
 [node name="BlockOld23" parent="." unique_id=585004382 instance=ExtResource("2_0wfyh")]
-position = Vector2(670, 790)
+position = Vector2(890, 740)
 
 [node name="BlockOld18" parent="." unique_id=1124857184 instance=ExtResource("2_0wfyh")]
-position = Vector2(610, 490)
+position = Vector2(830, 440)
 
 [node name="BlockOld19" parent="." unique_id=167726274 instance=ExtResource("2_0wfyh")]
-position = Vector2(430, 490)
+position = Vector2(650, 440)
 
 [node name="BlockOld22" parent="." unique_id=879244546 instance=ExtResource("2_0wfyh")]
-position = Vector2(430, 427)
+position = Vector2(650, 369)
 
 [node name="BlockOld20" parent="." unique_id=2043027548 instance=ExtResource("2_0wfyh")]
-position = Vector2(490, 610)
+position = Vector2(710, 560)
 
 [node name="BlockOld21" parent="." unique_id=830664495 instance=ExtResource("2_0wfyh")]
-position = Vector2(490, 730)
+position = Vector2(710, 680)

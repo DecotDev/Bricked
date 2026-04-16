@@ -14,7 +14,8 @@ func _physics_process(delta: float) -> void:
 	
 	#check_floor()
 	#check_floor2()
-	check_floor3()
+	#check_floor3()
+	check_floor4()
 	
 	move_and_slide()
 	
@@ -44,8 +45,19 @@ func check_floor3():
 		print(str(self.name) + " tocó suelo") 
 	if is_on_floor() and touched_a_block:
 		set_collision_layer_value(2,true)
-		print(str(self.name) + " en suelo y detectó a : " + str($Area2D.get_overlapping_bodies()[0].name ))
+		if $Area2D.get_overlapping_bodies().size() > 0:
+			print(str(self.name) + " en suelo y detectó a : " + str($Area2D.get_overlapping_bodies()[0].name ))
 		velocity = Vector2.ZERO
+		set_physics_process(false)
+	else:
+		velocity = Vector2(0,fall_speed)
+
+func check_floor4():
+	if is_on_floor():
+		print(str(self.name) + " tocó suelo") 
+		velocity = Vector2.ZERO
+		#$Area2D.set_deferred("disabled", true)
+		$Area2D.monitoring = false
 		set_physics_process(false)
 	else:
 		velocity = Vector2(0,fall_speed)
