@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cjed1013vnina"]
+
+[ext_resource type="Script" uid="uid://dt5awq2u7sw2r" path="res://spawner.gd" id="1_2vbf6"]
+
+[node name="Spawner" type="Node" unique_id=1985779125]
+script = ExtResource("1_2vbf6")
+
+[node name="Bricks" type="Node" parent="." unique_id=641684152]
+unique_name_in_owner = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1044973315]
+wait_time = 0.5
+autostart = true
+
+[node name="PointA" type="Marker2D" parent="." unique_id=799125982]
+unique_name_in_owner = true
+position = Vector2(0, -60)
+
+[node name="PointB" type="Marker2D" parent="." unique_id=2085736482]
+unique_name_in_owner = true
+position = Vector2(1860, -60)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

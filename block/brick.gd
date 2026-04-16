@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 300.0
-var fall_speed: int = 120
+var fall_speed: int = 200
 var touched_a_block: bool = false
 
 

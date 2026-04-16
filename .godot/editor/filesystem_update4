@@ -4,3 +4,6 @@ res://block/block_old.gd
 res://player/player.gd
 res://scenes/label.gd
 res://spawner.gd
+res://scenes/spawner.tscn
+res://block/brick.tscn
+res://block/brick.gd
