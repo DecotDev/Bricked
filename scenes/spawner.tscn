@@ -8,9 +8,8 @@ script = ExtResource("1_2vbf6")
 [node name="Bricks" type="Node" parent="." unique_id=641684152]
 unique_name_in_owner = true
 
-[node name="Timer" type="Timer" parent="." unique_id=1044973315]
-wait_time = 0.5
-autostart = true
+[node name="BrickSpawnTimer" type="Timer" parent="." unique_id=1044973315]
+wait_time = 0.2
 
 [node name="PointA" type="Marker2D" parent="." unique_id=799125982]
 unique_name_in_owner = true
@@ -20,4 +19,4 @@ position = Vector2(0, -60)
 unique_name_in_owner = true
 position = Vector2(1860, -60)
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="BrickSpawnTimer" to="." method="_on_timer_timeout"]

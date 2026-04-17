@@ -3,14 +3,25 @@
 [ext_resource type="PackedScene" uid="uid://cjed1013vnina" path="res://scenes/spawner.tscn" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://duw22r5ul7j1" path="res://player/player.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://c5w31w2iccyvg" path="res://scenes/label.gd" id="1_sugp2"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
-size = Vector2(1920, 16)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_o5qli"]
-size = Vector2(1920, 16)
+[ext_resource type="PackedScene" uid="uid://dw470e5sy6q5v" path="res://GUI/GameWall/game_wall.tscn" id="4_jyhfs"]
 
 [node name="Main" type="Node2D" unique_id=798972932]
+
+[node name="Spawner" parent="." unique_id=1985779125 instance=ExtResource("1_jyhfs")]
+
+[node name="PointA" parent="Spawner" index="2" unique_id=799125982]
+position = Vector2(120, -120)
+
+[node name="PointB" parent="Spawner" index="3" unique_id=2085736482]
+position = Vector2(1740, -120)
+
+[node name="Player" parent="." unique_id=1224542518 instance=ExtResource("1_o5qli")]
+position = Vector2(1110, 940)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=343929766]
+position = Vector2(960, 540)
+
+[node name="GameWall" parent="." unique_id=1185228598 instance=ExtResource("4_jyhfs")]
 
 [node name="Label" type="Label" parent="." unique_id=704279725]
 offset_top = 3.0
@@ -19,24 +30,5 @@ offset_bottom = 193.0
 text = "FPS: "
 script = ExtResource("1_sugp2")
 metadata/_edit_use_anchors_ = true
-
-[node name="Spawner" parent="." unique_id=1985779125 instance=ExtResource("1_jyhfs")]
-
-[node name="Player" parent="." unique_id=1224542518 instance=ExtResource("1_o5qli")]
-position = Vector2(1110, 940)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1118314012]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=380318734]
-position = Vector2(960, 1072)
-shape = SubResource("RectangleShape2D_0wfyh")
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1047101763]
-position = Vector2(0, 1064)
-texture = SubResource("PlaceholderTexture2D_o5qli")
-centered = false
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=343929766]
-position = Vector2(960, 540)
 
 [editable path="Spawner"]

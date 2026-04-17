@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dw470e5sy6q5v"]
+
+[ext_resource type="Texture2D" uid="uid://ctpxj2lqpfvaq" path="res://GUI/game_screen/wall_bg.png" id="1_fc54f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fc54f"]
+size = Vector2(120, 1005)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmies"]
+size = Vector2(120, 1005.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bmlxh"]
+size = Vector2(1920, 75)
+
+[node name="GameWall" type="Node2D" unique_id=1185228598]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1278766618]
+position = Vector2(960.00006, 540)
+scale = Vector2(15, 15)
+texture = ExtResource("1_fc54f")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1042607019]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1665224613]
+position = Vector2(60, 502.5)
+shape = SubResource("RectangleShape2D_fc54f")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=408665712]
+position = Vector2(1860, 502.25)
+shape = SubResource("RectangleShape2D_rmies")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1317819432]
+position = Vector2(960, 1042.5)
+shape = SubResource("RectangleShape2D_bmlxh")

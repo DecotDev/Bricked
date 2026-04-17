@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bbbnt1g2ssuo"]
+
+[ext_resource type="Texture2D" uid="uid://ctpxj2lqpfvaq" path="res://GUI/game_screen/wall_bg.png" id="1_r3q60"]
+
+[node name="GameScreen" type="Control" unique_id=580357529]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=552005415]
+position = Vector2(960.00006, 540)
+scale = Vector2(15, 15)
+texture = ExtResource("1_r3q60")

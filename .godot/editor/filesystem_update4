@@ -1,9 +1,9 @@
-res://block/block_old.tscn
-res://scenes/main.tscn
-res://block/block_old.gd
-res://player/player.gd
-res://scenes/label.gd
-res://spawner.gd
-res://scenes/spawner.tscn
 res://block/brick.tscn
-res://block/brick.gd
+res://scenes/main.tscn
+res://spawner.gd
+res://GUI/GameWall/game_wall.tscn
+res://scenes/spawner.tscn
+res://player/player.gd
+res://player/player.tscn
+res://brick/brick.gd
+res://brick/brick.tscn
