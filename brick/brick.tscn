@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://diapgiboochp1" path="res://icon.svg" id="2_r3f1n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
-size = Vector2(60, 60)
+size = Vector2(58, 60)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5rpy7"]
 size = Vector2(58, 1)
@@ -12,7 +12,8 @@ size = Vector2(58, 1)
 [node name="Brick" type="CharacterBody2D" unique_id=1024025611]
 collision_layer = 2
 collision_mask = 3
-safe_margin = 0.155
+motion_mode = 1
+safe_margin = 0.001
 script = ExtResource("1_5rpy7")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1020446338]

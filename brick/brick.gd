@@ -3,9 +3,11 @@ extends CharacterBody2D
 const SPEED = 300.0
 var fall_speed: int = 180
 var touched_a_block: bool = false
+var locked_x: float
 
 
 func _ready() -> void:
+	locked_x = position.x
 	pass
 	
 	
@@ -16,8 +18,9 @@ func _physics_process(delta: float) -> void:
 	#check_floor2()
 	#check_floor3()
 	check_floor4()
-	set_motion_mode(CharacterBody2D.MOTION_MODE_FLOATING)
+	#set_motion_mode(CharacterBody2D.MOTION_MODE_FLOATING)
 	move_and_slide()
+	#position.x = locked_x
 	
 func check_floor():
 	if is_on_floor():
