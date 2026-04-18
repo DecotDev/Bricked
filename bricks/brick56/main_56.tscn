@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dd2k7cesxxbce"]
+
+[ext_resource type="PackedScene" uid="uid://dw470e5sy6q5v" path="res://GUI/GameWall/game_wall.tscn" id="1_dcn5t"]
+[ext_resource type="PackedScene" uid="uid://duw22r5ul7j1" path="res://player/player.tscn" id="2_nqctx"]
+[ext_resource type="PackedScene" uid="uid://dpvo4v2ts1yh3" path="res://bricks/brick56/brick_56.tscn" id="3_nqctx"]
+
+[node name="main56" type="Node2D" unique_id=2021682342]
+
+[node name="GameWall" parent="." unique_id=1185228598 instance=ExtResource("1_dcn5t")]
+
+[node name="Player" parent="GameWall" unique_id=1224542518 instance=ExtResource("2_nqctx")]
+position = Vector2(1035, 930)
+
+[node name="Brick56" parent="." unique_id=780671667 instance=ExtResource("3_nqctx")]
+position = Vector2(120, -1215)
+
+[node name="Brick57" parent="." unique_id=1387165628 instance=ExtResource("3_nqctx")]
+position = Vector2(960, -3720)
