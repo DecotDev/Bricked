@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://d3iyp1jot0s2w"]
+
+[ext_resource type="Texture2D" uid="uid://bq6ekdgbj0blb" path="res://bricks/brick28/brick28.png" id="1_6wm3w"]
+[ext_resource type="Script" uid="uid://cmwtvhylhv2mw" path="res://bricks/brick28/brick_28.gd" id="1_wrjql"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrjql"]
+size = Vector2(416, 420)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wm3w"]
+size = Vector2(417, 5.5)
+
+[node name="Brick28" type="CharacterBody2D" unique_id=906930744]
+collision_layer = 2
+collision_mask = 3
+motion_mode = 1
+safe_margin = 0.001
+script = ExtResource("1_wrjql")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2134779381]
+scale = Vector2(15, 15)
+texture = ExtResource("1_6wm3w")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=257814969]
+position = Vector2(210, 210)
+shape = SubResource("RectangleShape2D_wrjql")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=790503380]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1798330121]
+position = Vector2(210, 425.25)
+shape = SubResource("RectangleShape2D_6wm3w")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

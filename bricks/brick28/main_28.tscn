@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bejydiaul82dn"]
+
+[ext_resource type="PackedScene" uid="uid://dw470e5sy6q5v" path="res://GUI/GameWall/game_wall.tscn" id="1_83k4g"]
+[ext_resource type="PackedScene" uid="uid://d3iyp1jot0s2w" path="res://bricks/brick28/brick_28.tscn" id="2_0x03r"]
+[ext_resource type="PackedScene" uid="uid://duw22r5ul7j1" path="res://player/player.tscn" id="3_hq14b"]
+
+[node name="Main28" type="Node2D" unique_id=415299475]
+
+[node name="GameWall" parent="." unique_id=1185228598 instance=ExtResource("1_83k4g")]
+
+[node name="Brick28" parent="GameWall" unique_id=906930744 instance=ExtResource("2_0x03r")]
+position = Vector2(120, 0)
+
+[node name="Brick29" parent="GameWall" unique_id=352651552 instance=ExtResource("2_0x03r")]
+position = Vector2(540, 0)
+
+[node name="Brick30" parent="GameWall" unique_id=927299452 instance=ExtResource("2_0x03r")]
+position = Vector2(960, 0)
+
+[node name="Brick31" parent="GameWall" unique_id=2111816314 instance=ExtResource("2_0x03r")]
+position = Vector2(1380, 0)
+
+[node name="Player" parent="." unique_id=1224542518 instance=ExtResource("3_hq14b")]
+position = Vector2(1002, 849)

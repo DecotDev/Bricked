@@ -1,6 +1,7 @@
 res://bricks/brick56/brick_56.tscn
 res://bricks/brick56/brick_56.gd
-res://bricks/brick56/main_56.tscn
-res://player/player.gd
-res://GUI/GameWall/game_wall.tscn
+res://bricks/brick28/brick_28.tscn
+res://bricks/brick28/brick_28.gd
 res://scenes/main.tscn
+res://GUI/GameWall/game_wall.tscn
+res://bricks/brick28/main_28.tscn

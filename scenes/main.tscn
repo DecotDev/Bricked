@@ -16,7 +16,7 @@ position = Vector2(120, -120)
 position = Vector2(1740, -120)
 
 [node name="Player" parent="." unique_id=1224542518 instance=ExtResource("1_o5qli")]
-position = Vector2(1110, 940)
+position = Vector2(980, 880)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=343929766]
 position = Vector2(960, 540)
