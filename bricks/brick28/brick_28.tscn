@@ -10,8 +10,8 @@ size = Vector2(416, 420)
 size = Vector2(417, 5.5)
 
 [node name="Brick28" type="CharacterBody2D" unique_id=906930744]
-collision_layer = 2
-collision_mask = 3
+collision_layer = 4
+collision_mask = 15
 motion_mode = 1
 safe_margin = 0.001
 script = ExtResource("1_wrjql")
@@ -26,11 +26,17 @@ position = Vector2(210, 210)
 shape = SubResource("RectangleShape2D_wrjql")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=790503380]
+visible = false
 collision_layer = 3
 collision_mask = 3
+monitoring = false
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1798330121]
 position = Vector2(210, 425.25)
 shape = SubResource("RectangleShape2D_6wm3w")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1915540787]
+position = Vector2(210, 420)
+target_position = Vector2(0, 0)
+collision_mask = 3

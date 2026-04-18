@@ -1,12 +1,12 @@
-CollisionShape2D
-Area2D
 Sprite2D
 CharacterBody2D
+RayCast2D
+CollisionShape2D
+Area2D
 StaticBody2D
 Camera2D
 Marker2D
 Timer
 Node
 Label
-RayCast2D
 RigidBody2D

@@ -20,5 +20,8 @@ position = Vector2(960, 0)
 [node name="Brick31" parent="GameWall" unique_id=2111816314 instance=ExtResource("2_0x03r")]
 position = Vector2(1380, 0)
 
+[node name="Brick32" parent="GameWall" unique_id=1621419271 instance=ExtResource("2_0x03r")]
+position = Vector2(960, -710)
+
 [node name="Player" parent="." unique_id=1224542518 instance=ExtResource("3_hq14b")]
 position = Vector2(1002, 849)

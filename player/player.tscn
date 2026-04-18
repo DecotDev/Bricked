@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://duw22r5ul7j1"]
 
 [ext_resource type="Script" uid="uid://dvmao86tqbv0h" path="res://player/player.gd" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://diapgiboochp1" path="res://icon.svg" id="2_rkbax"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u8vuu"]
 size = Vector2(48, 48)
@@ -9,7 +10,8 @@ size = Vector2(48, 48)
 size = Vector2(48, 48)
 
 [node name="Player" type="CharacterBody2D" unique_id=1224542518]
-collision_mask = 3
+collision_layer = 8
+collision_mask = 7
 slide_on_ceiling = false
 safe_margin = 1.0
 script = ExtResource("1_3vyb7")
@@ -21,3 +23,8 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2043669988]
 position = Vector2(24, 24)
 shape = SubResource("RectangleShape2D_3vyb7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2115263421]
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("2_rkbax")
+centered = false
