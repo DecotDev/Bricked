@@ -6,9 +6,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wrjql"]
 size = Vector2(416, 420)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wm3w"]
-size = Vector2(417, 5.5)
-
 [node name="Brick28" type="CharacterBody2D" unique_id=906930744]
 collision_layer = 4
 collision_mask = 15
@@ -24,17 +21,6 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=257814969]
 position = Vector2(210, 210)
 shape = SubResource("RectangleShape2D_wrjql")
-
-[node name="Area2D" type="Area2D" parent="." unique_id=790503380]
-visible = false
-collision_layer = 3
-collision_mask = 3
-monitoring = false
-monitorable = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1798330121]
-position = Vector2(210, 425.25)
-shape = SubResource("RectangleShape2D_6wm3w")
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1915540787]
 position = Vector2(210, 420)

@@ -1,5 +1,17 @@
 [gd_scene format=3 uid="uid://c5h00aj13b8qb"]
 
+[ext_resource type="Texture2D" uid="uid://bf0cr1bmcexv7" path="res://bricks/brick4/brick4.png" id="1_q7jsw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ropbv"]
+size = Vector2(58, 60)
+
 [node name="Brick4" type="CharacterBody2D" unique_id=1938573182]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=240168195]
+scale = Vector2(15, 15)
+texture = ExtResource("1_q7jsw")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=939593527]
+position = Vector2(30, 30)
+shape = SubResource("RectangleShape2D_ropbv")

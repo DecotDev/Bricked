@@ -3,12 +3,12 @@ extends CharacterBody2D
 const SPEED = 300.0
 
 #4
-#const JUMP_VELOCITY = -850
-#const GRAVITY = 3000
+const JUMP_VELOCITY = -850
+const GRAVITY = 3000
 
 #56
-const JUMP_VELOCITY = -2350
-const GRAVITY = 3000
+#const JUMP_VELOCITY = -2350
+#const GRAVITY = 3000
 
 func _ready() -> void:
 	pass
