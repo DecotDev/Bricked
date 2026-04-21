@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d2r0au2ty5h0g"]
+
+[ext_resource type="Script" uid="uid://i0i1mtx1ejy5" path="res://bricks/brick7/brick_7.gd" id="1_3dqfd"]
+[ext_resource type="Texture2D" uid="uid://c18onmhxtidod" path="res://bricks/brick7/brick7.png" id="1_ceb4c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dqfd"]
+size = Vector2(103, 105)
+
+[node name="Brick7" type="CharacterBody2D" unique_id=796520994]
+collision_layer = 4
+collision_mask = 15
+motion_mode = 1
+safe_margin = 0.001
+script = ExtResource("1_3dqfd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2065616643]
+scale = Vector2(15, 15)
+texture = ExtResource("1_ceb4c")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1765898823]
+position = Vector2(52.5, 52.5)
+shape = SubResource("RectangleShape2D_3dqfd")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=883997168]
+position = Vector2(53, 105)
+target_position = Vector2(0, 0)
+collision_mask = 3

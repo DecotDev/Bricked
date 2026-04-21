@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://sctam8ik1dd"]
+
+[ext_resource type="Texture2D" uid="uid://cmmyjh3dotjce" path="res://bricks/brick8/brick8.png" id="1_6r8nm"]
+[ext_resource type="Script" uid="uid://gcre2e8x5367" path="res://bricks/brick8/brick_8.gd" id="1_jkcsm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkcsm"]
+size = Vector2(118, 120)
+
+[node name="Brick8" type="CharacterBody2D" unique_id=1363076677]
+collision_layer = 4
+collision_mask = 15
+motion_mode = 1
+safe_margin = 0.001
+script = ExtResource("1_jkcsm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=20427901]
+scale = Vector2(15, 15)
+texture = ExtResource("1_6r8nm")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1120332482]
+position = Vector2(60, 60)
+shape = SubResource("RectangleShape2D_jkcsm")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=147816561]
+position = Vector2(60, 120)
+target_position = Vector2(0, 0)
+collision_mask = 3

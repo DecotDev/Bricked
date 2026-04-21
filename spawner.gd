@@ -3,7 +3,7 @@ extends Node
 var rng: = RandomNumberGenerator.new()
 
 @onready
-var brick: PackedScene = preload("res://brick/brick.tscn")
+var brick: PackedScene = preload("res://bricks/brick4/brick_4.tscn")
 
 var point_a: Vector2
 var point_b: Vector2

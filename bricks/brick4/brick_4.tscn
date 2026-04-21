@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://c5h00aj13b8qb"]
 
 [ext_resource type="Texture2D" uid="uid://bf0cr1bmcexv7" path="res://bricks/brick4/brick4.png" id="1_q7jsw"]
+[ext_resource type="Script" uid="uid://cslr0fvpcskhq" path="res://bricks/brick4/brick_4.gd" id="1_ropbv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ropbv"]
 size = Vector2(58, 60)
 
 [node name="Brick4" type="CharacterBody2D" unique_id=1938573182]
+collision_layer = 4
+collision_mask = 15
+motion_mode = 1
+safe_margin = 0.001
+script = ExtResource("1_ropbv")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=240168195]
 scale = Vector2(15, 15)
@@ -15,3 +21,8 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=939593527]
 position = Vector2(30, 30)
 shape = SubResource("RectangleShape2D_ropbv")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1455429179]
+position = Vector2(30, 60)
+target_position = Vector2(0, 0)
+collision_mask = 3
