@@ -9,7 +9,7 @@ script = ExtResource("1_2vbf6")
 unique_name_in_owner = true
 
 [node name="BrickSpawnTimer" type="Timer" parent="." unique_id=1044973315]
-wait_time = 0.2
+wait_time = 0.1
 
 [node name="PointA" type="Marker2D" parent="." unique_id=799125982]
 unique_name_in_owner = true
